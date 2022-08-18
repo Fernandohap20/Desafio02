@@ -1,0 +1,71 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  margin: 0px;
+  background: #0D1323;
+  margin-top: 3.75rem; 
+}
+.wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center; /*Controla os filhos dele*/
+}
+
+img.robson{
+  max-width: 30%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+div.menu ul, li, a {
+  text-transform: none;
+  text-decoration: none;
+  list-style-type: none;
+  color: #ffff;
+  padding: 13px;
+}
+
+/*section{
+  display: grid; Por padrão o grid só tem uma coluna, tem q definir quantas quer 
+    grid-template-columns: 1fr 1fr 2fr ;cada fr é a quantidade de colunas
+    gap: 20px;
+} */
+
+div.foto-Perfil{
+  background: #5746EA;
+  border-radius: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  padding-bottom: 110px;
+  padding-right: 0px;
+}
+
+div.menu{
+  background: #1D204B;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.conteudo .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+
+}
+
+.conteudo > ul > li{
+  background: #1D204B;
+  padding: 25px;
+  border-radius: 10px;
+}
