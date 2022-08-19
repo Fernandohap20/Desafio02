@@ -14,13 +14,35 @@ li{
   -webkit-font-smoothing: antialiased;
 }
 
+
+
 body{
+  height: 100vh;
   font-size: 18px;
   color: #ffff;
   margin: 0px;
-  background: #0D1323;
-  margin-top: 3.75rem; 
+  background: #0D1323; 
   font-family: 'Rubik', sans-serif ;
+}
+
+main{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+section{
+  width: 100%;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+  position: relative;
+  max-width: 1200px;
 }
 
 article.perfil{
@@ -30,13 +52,16 @@ article.perfil{
 .wrapper{
   display: flex;
   width: 100%;
-  justify-content: center; /*Controla os filhos dele*/
+  justify-content: center; /*Controla os filhos dele horizontalmente*/
 }
 
 img.robson{
-  max-width: 100px;
+  max-width: 70px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid;
+  
 }
 
 .foto-perfil p{
@@ -71,35 +96,61 @@ div.menu a:hover{
 }
 
 div.foto-perfil{
+  position: relative;
+  z-index: 1;
   background: #5746EA;
   border-radius: 10px;
   padding: 25px;
   border-radius: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   
 }
 
 div.menu{
-  
+  bottom: 50px ;
+  position: relative;
   background: #1D204B;
   padding: 25px;
+  padding-bottom: 0px;
   border-radius: 10px;
+}
+
+.conteudo{
+  width: 100%;
 }
 
 .conteudo .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
-  padding-left: 30px;
+  padding-left: 20px;
   margin: 0px;
+  
 
 }
 
-.conteudo > ul > li{
+div.icon {
+  background:#FF8B66 ;
+  border-radius: 10px 10px 0px 0px ;
+  display: flex;
+  justify-content: flex-end;
+  height: 38px;
+}
+
+div.icon img{
+  width: 42px;
+  margin-right: 6px;
+  opacity: 0.9;
+
+}
+
+.conteudo .card-inf{
+  padding:25px ;
+  margin-top: -5px;
+  position: relative;
   background: #1D204B;
-  margin-top: 35px;
-  padding: 25px;
-  padding-top: 10px;
+  /*padding: 25px;
+  padding-top: px;*/
   border-radius: 10px;
 }
 
@@ -112,14 +163,16 @@ li .pontos{
 
 .pontos h2{
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .grid h3{
   font-size: 3rem;
   margin: 5px;
+  font-weight: 200;
 }
 
 .grid p {
   font-size: 00.8rem;
-  color: rgba(255, 255, 255, 0.384);
+  color: rgba(255, 255, 255, 0.486);
 }
