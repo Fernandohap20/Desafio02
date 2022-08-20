@@ -53,7 +53,9 @@ article.perfil{
 .wrapper{
   display: flex;
   width: 100%;
+  right: 100%;
   justify-content: center; /*Controla os filhos dele horizontalmente*/
+  
 }
 
 img.robson{
@@ -68,6 +70,7 @@ img.robson{
 .foto-perfil p{
   font-size: 2.5rem;
   margin: 10px;
+  font-weight: 100;
 }
 
 .foto-perfil p.report {
@@ -123,12 +126,12 @@ div.foto-perfil{
 
 
 div.menu{
-  bottom: 50px ;
+  bottom: 43px ;
   position: relative;
   background: #1D204B;
-  padding: 25px 15px 25px 15px;
-  padding-bottom: 0px;
+  padding: 25px 15px 0px 15px;
   border-radius: 10px;
+  
 }
 
 .conteudo{
