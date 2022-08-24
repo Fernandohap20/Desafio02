@@ -16,7 +16,6 @@ li{
 
 ul {
   padding: 0px;
-
 }
 
 ul h3{
@@ -25,7 +24,7 @@ ul h3{
 
 body{
   height: 100vh;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #ffff;
   margin: 0px;
   background: #0D1323; 
@@ -50,13 +49,12 @@ section{
   padding: 0 1.5rem;
   width: 100%;
   position: relative;
-  max-width: 1100px;
+  max-width: 68.75rem;
 }
 
 article.perfil{
-  max-width: 250px;
+  max-width: 15.625rem;
   width: 100%;
-
 }
 .wrapper{
   display: flex;
@@ -64,26 +62,23 @@ article.perfil{
   right: 100%;
   gap: 1.4rem;
   justify-content: center; /*Controla os filhos dele horizontalmente*/
-  
 }
 
 img.robson{
-  max-width: 70px;
+  max-width: 4.375rem;
   width: 100%;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
   border: 2px solid;
-  
 }
 
 .foto-perfil p{
   font-size: 2.5rem;
-  margin: 10px;
+  margin: .625rem;
   font-weight: 100;
 }
 
 .foto-perfil p.report {
-
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.432)
 }
@@ -94,7 +89,7 @@ div.menu ul, a {
   text-decoration: none;
   list-style-type: none;
   color: rgb(138, 138, 138);
-  padding: 13px;
+  padding: .8125rem;
 }
 
 
@@ -112,13 +107,13 @@ div.foto-perfil{
   position: relative;
   z-index: 1;
   background: #5746EA;
-  border-radius: 10px;
+  border-radius: .625rem;
   padding: 25px 15px 25px 15px;
-  border-radius: 10px;
-  padding-bottom: 50px;
+  border-radius: .625rem;
+  padding-bottom: 3.125rem;
   animation-name: up;
   animation-duration: 1s;
-  top: 150px;
+  transform: translateY(9.375rem);
   animation-fill-mode: forwards;
 }
 
@@ -128,34 +123,28 @@ div.foto-perfil{
   }
   to {
     
-    top: 0px;
+    transform: translateY(0rem);
   }
 }
 
-
-
 div.menu{
-  bottom: 43px ;
+  bottom: 2.6875rem ;
   position: relative;
   background: #1D204B;
   padding: 25px 15px 0px 15px;
-  border-radius: 10px;
-  
+  border-radius: .625rem;
 }
 
 .conteudo{
   width: 100%;
-  
 }
 
 .conteudo .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+  gap: 1.5625rem;
   /*padding-left: 20px;*/
   margin: 0px;
-  
-
 }
 
 div.icon {
@@ -163,14 +152,14 @@ div.icon {
   border-radius: 10px 10px 0px 0px ;
   display: flex;
   justify-content: flex-end;
-  height: 38px;
-  height: 50px;
+  height: 2.375rem;
+  height: 3.125rem;
   animation-name: subir;
   animation-duration: 2s;
   position: relative;
   transition: 0.5s background-color ease-in;
   animation-fill-mode: forwards;
-  top: 50px;
+  transform: translateY(3.125rem);
 }
 
 @keyframes subir{
@@ -180,39 +169,34 @@ div.icon {
   }
   to {
     opacity: 1;
-    top: 0px;
+    transform: translateY(0rem);
   }
 }
 
 div.icon img{
-  width: 70px;
-  margin-right: 10px;
+  width: 4.375rem;
+  margin-right: .625rem;
   opacity: 0.9;
-
+  object-fit:cover ;
 }
 
 .conteudo .card-inf{
-  
-  padding:25px ;
-  padding-top: 5px;
-  margin-top: -15px;
+  padding:1.5625rem ;
+  padding-top: .3125rem;
+  margin-top: -0.9375rem;
   position: relative;
   background: #1D204B;
-  border-radius: 10px;
-
+  border-radius: .625rem;
 }
 
 .conteudo .card-inf:hover{
-
   background:#323B7C ;
-  
 }
 
 li .pontos{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .pontos h2{
@@ -251,7 +235,6 @@ li .pontos{
 .grid li:nth-child(5) .icon{
   background:#7235D0;
   animation-delay: 1.2s;
-  
 }
 
 .grid li:nth-child(6) .icon{
@@ -259,11 +242,10 @@ li .pontos{
   animation-delay: 1.5s;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
   .wrapper {
     flex-direction: column;
-    margin-top: 100px
-    
+    margin-top: 6.25rem
   }
   .conteudo .grid { grid-template-columns: 1fr;
   }
@@ -278,11 +260,11 @@ li .pontos{
     max-width: none;
   }
   article.perfil{
-    margin-bottom: -55px;
+    margin-bottom: -3.4375rem;
   }
   div.foto-perfil{
-    top: 70px;
-    padding-bottom: 20px;
+    top: 4.375rem;
+    padding-bottom: 1.25rem;
   }
   ul.menu-a {
     display: flex;
@@ -293,13 +275,12 @@ li .pontos{
     font-size: 1.5rem;
   }
   .wrapper-name{
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
   }
   .conteudo .wrapper-hora {
     display: flex;
     justify-content: space-between;
     align-items: center
-    
   }
   .grid h3{
     font-size: 2rem;
